@@ -1,0 +1,248 @@
+/* ==========================================================================
+   Electronic Press Kit — standalone, clean/editorial treatment.
+   Intentionally does not reuse .site-header / .site-footer / page cursors:
+   this page is a leave-behind for prospective high-ticket clients, not part
+   of site navigation. Relies on style.css only for tokens, reset, [data-reveal]
+   and .btn.
+   ========================================================================== */
+
+body.epk {
+  cursor: auto;
+  background: var(--color-bg);
+}
+
+.epk-topbar {
+  border-bottom: 1px solid var(--color-line);
+}
+.epk-topbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding-block: var(--space-5);
+}
+.epk-topbar__mark { width: 34px; height: 34px; }
+.epk-topbar__label {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+.epk-eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-gold-dark);
+  margin-bottom: var(--space-4);
+}
+
+.epk-hero {
+  padding-block: var(--space-10) var(--space-8);
+  max-width: 780px;
+}
+.epk-hero h1 {
+  font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+  letter-spacing: -0.02em;
+}
+.epk-lede {
+  font-size: var(--fs-md);
+  line-height: 1.65;
+  color: var(--color-ink-soft);
+  max-width: 62ch;
+  margin-block: var(--space-5) var(--space-7);
+}
+
+.epk-hero-image {
+  margin: 0 0 var(--space-9);
+}
+.epk-hero-image img {
+  width: 100%;
+  max-height: 640px;
+  object-fit: cover;
+}
+.epk-hero-image figcaption {
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding: var(--space-3) var(--space-5) 0;
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.04em;
+  color: var(--color-ink-muted);
+}
+@media (min-width: 768px) {
+  .epk-hero-image figcaption { padding-inline: var(--space-7); }
+}
+
+.epk-clients {
+  background: var(--color-bg-soft);
+  border-block: 1px solid var(--color-line);
+  padding-block: var(--space-7);
+  margin-bottom: var(--space-9);
+}
+.epk-clients__label {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-5);
+}
+.epk-clients__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4) var(--space-6);
+}
+.epk-clients__list li {
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+
+.epk-section {
+  padding-block: var(--space-9);
+  border-top: 1px solid var(--color-line);
+}
+
+.epk-about p {
+  max-width: 68ch;
+  font-size: var(--fs-md);
+  line-height: 1.75;
+  color: var(--color-ink-soft);
+  margin: 0 0 var(--space-5);
+}
+.epk-about p:last-child { margin-bottom: 0; }
+
+.epk-work-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7) var(--space-6);
+}
+@media (min-width: 700px) {
+  .epk-work-grid { grid-template-columns: 1fr 1fr; }
+}
+.epk-work-item { margin: 0; }
+.epk-work-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+.epk-work-item figcaption {
+  margin-top: var(--space-3);
+  font-size: var(--fs-xs);
+  color: var(--color-ink-muted);
+}
+.epk-work-item figcaption span {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  color: var(--color-ink);
+  margin-bottom: var(--space-1);
+}
+
+.epk-process {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+@media (min-width: 700px) {
+  .epk-process { grid-template-columns: repeat(4, 1fr); }
+}
+.epk-process li {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+.epk-process__num {
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  color: var(--color-gold);
+}
+.epk-process h3 {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-2);
+}
+.epk-process p {
+  font-size: var(--fs-xs);
+  line-height: 1.6;
+  color: var(--color-ink-muted);
+  margin: 0;
+}
+
+.epk-why-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+@media (min-width: 700px) {
+  .epk-why-grid { grid-template-columns: 1fr 1fr; }
+}
+.epk-why-item h3 {
+  font-size: var(--fs-md);
+  margin-bottom: var(--space-2);
+}
+.epk-why-item p {
+  font-size: var(--fs-xs);
+  line-height: 1.6;
+  color: var(--color-ink-muted);
+  margin: 0;
+  max-width: 42ch;
+}
+
+.epk-cta {
+  background: var(--color-ink);
+  color: #fff;
+  margin-top: var(--space-9);
+  padding-block: var(--space-9);
+  text-align: center;
+}
+.epk-cta__inner { max-width: 520px; margin-inline: auto; }
+.epk-cta h2 {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  margin-bottom: var(--space-3);
+}
+.epk-cta p {
+  color: rgba(255,255,255,0.7);
+  margin: 0 0 var(--space-6);
+}
+
+.epk-signature {
+  padding-block: var(--space-6);
+}
+.epk-signature__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4) var(--space-6);
+  text-align: center;
+}
+.epk-signature__mark { width: 30px; height: 30px; flex-shrink: 0; }
+.epk-signature__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--fs-2xs);
+  color: var(--color-ink-muted);
+}
+.epk-signature__meta a { color: var(--color-ink-muted); }
+.epk-signature__meta a:hover { color: var(--color-ink); }
+.epk-signature__ig {
+  font-size: var(--fs-2xs);
+  color: var(--color-gold-dark);
+  letter-spacing: 0.04em;
+}

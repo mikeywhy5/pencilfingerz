@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paintings: Pencil Fingerz</title>
+<meta name="description" content="Original hand-painted canvas work by Pencil Fingerz, built for private collections. 100% human-made, no AI, based in Chilliwack, B.C.">
+<link rel="icon" href="assets/favicon-pf-vector.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas class="mouse-trail-canvas" data-pencil-trail aria-hidden="true"></canvas>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="home.html" class="brand" aria-label="Pencil Fingerz home">
+      <span class="brand__mark"><img src="assets/logo-transparent.png" alt="" width="40" height="40"></span>
+      </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="murals.html">Murals</a>
+      <a href="paintings.html" aria-current="page">Paintings</a>
+      <a href="tattoos.html">Tattoos</a>
+      <a href="logos-digital.html">Logos &amp; Digital</a>
+      <a href="clothing.html">Wearables</a>
+      <a href="about.html">About</a>
+      <a href="store.html" class="btn btn--teal" style="padding:var(--space-2) var(--space-3); min-height:auto;">Store</a>
+      <a href="book-tattoo.html" class="btn btn--gold" style="padding:var(--space-2) var(--space-3); min-height:auto;">Book a Tattoo</a>
+      <a href="book-art.html" class="btn btn--gold" style="padding:var(--space-2) var(--space-3); min-height:auto;">Book Something Else</a>
+    </nav>
+
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+  <div class="mobile-nav__top">
+    <button type="button" class="mobile-nav__close" data-nav-close aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav__links" aria-label="Mobile">
+    <a href="home.html">Home</a>
+    <a href="murals.html">Murals</a>
+    <a href="paintings.html" aria-current="page">Paintings</a>
+    <a href="tattoos.html">Tattoos</a>
+    <a href="logos-digital.html">Logos &amp; Digital</a>
+    <a href="clothing.html">Wearables</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="mobile-nav__cta">
+    <a href="store.html" class="btn btn--teal">Store</a>
+    <a href="book-tattoo.html" class="btn btn--gold">Book a Tattoo</a>
+    <a href="book-art.html" class="btn btn--gold">Book Something Else</a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="hero container" style="padding-bottom: var(--space-6);">
+    <p class="hero__eyebrow">Studio Practice</p>
+    <h1>Original paintings, <span class="accent">built for collectors.</span></h1>
+    <p class="lede">Canvas and studio work for private collections and serious collectors: original, hand-painted pieces with zero AI in the process.</p>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="gallery-grid gallery-grid--feature">
+        <article class="gallery-card gallery-card--murals gallery-card--flagship" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/painting-concert.jpg" alt="Concert painting of a singer performing over a crowd" loading="eager">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Painting</span><span class="gallery-card__label">Concert Scene &middot; Acrylic</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/painting-sunflowers.jpg" alt="Still life painting of sunflowers in a glass vase" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Painting</span><span class="gallery-card__label">Still Life &middot; Sunflowers</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/painting-multi-vase-flowers.jpg" alt="Still life painting of flowers in multiple vases" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Painting</span><span class="gallery-card__label">Still Life &middot; Florals</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/painting-white-flowers.jpg" alt="Still life painting of white flowers in a blue pot" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Painting</span><span class="gallery-card__label">Still Life &middot; White Blooms</span></div></div>
+        </article>
+      </div>
+
+      <div class="section__foot">
+        <a href="book-art.html" class="btn btn--outline">Commission a Painting</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="footer-brand">
+        <span class="footer-brand__mark"><img src="assets/logo-transparent.png" alt="Pencil Fingerz logo" width="48" height="48"></span>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-nav__col">
+          <span class="footer-nav__title">Explore</span>
+          <a href="murals.html">Murals</a>
+          <a href="paintings.html">Paintings</a>
+          <a href="tattoos.html">Tattoos</a>
+          <a href="logos-digital.html">Logos &amp; Digital</a>
+          <a href="clothing.html">Wearables</a>
+          <a href="store.html">Store</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-nav__col">
+          <span class="footer-nav__title">Book</span>
+          <a href="book-tattoo.html">Book a Tattoo</a>
+          <a href="book-art.html">Book Murals &amp; Other Art</a>
+        </div>
+        <div class="footer-nav__col">
+          <span class="footer-nav__title">Contact</span>
+          <a href="mailto:pencilfingerzmgmt@gmail.com">pencilfingerzmgmt@gmail.com</a>
+          <span style="font-size:var(--fs-xs); color:var(--color-ink-soft);">Chilliwack, B.C.</span>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <span class="footer-social__title">Follow</span>
+        <div class="footer-social__icons">
+          <a href="https://www.instagram.com/pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://x.com/Pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on X">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4L4 20"/></svg>
+          </a>
+          <a href="https://www.facebook.com/pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h-2a2 2 0 00-2 2v2H9v3h2v6h3v-6h2.2l.8-3H14v-1.5c0-.55.45-1 1-1H16z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v9.5a3.5 3.5 0 11-3-3.46"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year></span> Pencil Fingerz. All rights reserved.</span>
+      <span>Hand-painted clothing photos coming soon.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

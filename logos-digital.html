@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Logos &amp; Digital Art: Pencil Fingerz</title>
+<meta name="description" content="Album covers, band logos, and digital illustration by Pencil Fingerz. Based in Chilliwack, B.C.">
+<link rel="icon" href="assets/favicon-pf-vector.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas class="mouse-trail-canvas" data-pencil-trail aria-hidden="true"></canvas>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="home.html" class="brand" aria-label="Pencil Fingerz home">
+      <span class="brand__mark"><img src="assets/logo-transparent.png" alt="" width="40" height="40"></span>
+      </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="murals.html">Murals</a>
+      <a href="paintings.html">Paintings</a>
+      <a href="tattoos.html">Tattoos</a>
+      <a href="logos-digital.html" aria-current="page">Logos &amp; Digital</a>
+      <a href="clothing.html">Wearables</a>
+      <a href="about.html">About</a>
+      <a href="store.html" class="btn btn--teal" style="padding:var(--space-2) var(--space-3); min-height:auto;">Store</a>
+      <a href="book-tattoo.html" class="btn btn--gold" style="padding:var(--space-2) var(--space-3); min-height:auto;">Book a Tattoo</a>
+      <a href="book-art.html" class="btn btn--gold" style="padding:var(--space-2) var(--space-3); min-height:auto;">Book Something Else</a>
+    </nav>
+
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+  <div class="mobile-nav__top">
+    <button type="button" class="mobile-nav__close" data-nav-close aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav__links" aria-label="Mobile">
+    <a href="home.html">Home</a>
+    <a href="murals.html">Murals</a>
+    <a href="paintings.html">Paintings</a>
+    <a href="tattoos.html">Tattoos</a>
+    <a href="logos-digital.html" aria-current="page">Logos &amp; Digital</a>
+    <a href="clothing.html">Wearables</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="mobile-nav__cta">
+    <a href="store.html" class="btn btn--teal">Store</a>
+    <a href="book-tattoo.html" class="btn btn--gold">Book a Tattoo</a>
+    <a href="book-art.html" class="btn btn--gold">Book Something Else</a>
+  </div>
+</div>
+
+<main id="main">
+  <section class="hero container" style="padding-bottom: var(--space-6);">
+    <p class="hero__eyebrow">Also On the Table</p>
+    <h1>Logos &amp; digital art, <span class="accent">same hand.</span></h1>
+    <p class="lede">Brand marks, album covers, tour posters, and digital illustration, all from the same hand, different canvas.</p>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="gallery-grid gallery-grid--feature">
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-def-soulja.jpg" alt="Def Soulja Moonlight Marauder album cover artwork" loading="eager">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Def Soulja &middot; "Moonlight Marauder"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-currensy-fire.jpg" alt="Currensy and Drupey Beats Fire in the Clouds album cover" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Curren$y &middot; "Fire in the Clouds"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-issa-gold.jpg" alt="Issa Gold Conversations with a Butterfly album cover" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Issa Gold &middot; "Conversations with a Butterfly"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-boslen-eye.jpg" alt="Boslen Eye for an Eye album cover artwork" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Boslen &middot; "Eye for an Eye"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/digital-tpain-on-top-of-the-covers.jpeg" alt="T-Pain On Top of the Covers album artwork" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">T-Pain &middot; "On Top of the Covers"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/digital-t-wayne-cover.jpg" alt="T-Wayne album cover, a split pencil portrait of T-Pain and Lil Wayne" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">T-Pain &amp; Lil Wayne &middot; "T-Wayne"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/digital-snotty-nose-rez-kids-im-good-hbu.webp" alt="Snotty Nose Rez Kids I'm Good HBU album cover illustration" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Snotty Nose Rez Kids &middot; "I'm Good, HBU?"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-black-lotus.jpg" alt="Black Lotus album cover illustration of an armored figure on a rocky shore" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Black Lotus</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/cam%20ron%202%20cover.jpg" alt="Cam'ron Purple Haze 2 album cover illustration" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Cam&rsquo;ron &middot; &quot;Purple Haze 2&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-cellar-door-underachievers-cover.jpg" alt="The Underachievers Cellar Door: Terminus Ut Exordium album cover illustration" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">The Underachievers &middot; &quot;Cellar Door&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-underachievers-renaissance-cover.jpg" alt="The Underachievers Renaissance album cover illustration" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">The Underachievers &middot; &quot;Renaissance&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-texas-technician-cover.jpg" alt="Texas Technician mixtape cover illustration" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">&quot;Texas Technician&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-the-game-year-of-the-wolf-cover.jpg" alt="The Game Year of the Wolf album cover illustration" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">The Game &middot; &quot;Year of the Wolf&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-yelawolf-tour-poster.jpeg" alt="Yelawolf and Fefe Slumadian Tour poster design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">Yelawolf &amp; Fefe &middot; &quot;Slumadian Tour&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-yelawolf-slumadian-tour-bw.jpg" alt="Yelawolf and Fefe Slumadian Tour black and white wolf poster design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">Yelawolf &amp; Fefe &middot; &quot;Slumadian Tour&quot; (B&amp;W)</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-mick-jenkins-underachievers-anz-tour.jpg" alt="Mick Jenkins and The Underachievers Australia New Zealand tour poster" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">Mick Jenkins &amp; The Underachievers &middot; ANZ Tour</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-mick-jenkins-kirk-knight-tour.jpg" alt="Mick Jenkins and Kirk Knight tour poster" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">Mick Jenkins &amp; Kirk Knight &middot; Tour Poster</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-underachievers-renaissance-tour-poster.jpg" alt="The Underachievers Renaissance Tour comic book style poster" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">The Underachievers &middot; &quot;Renaissance Tour&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-underachievers-renaissance-european-tour.jpg" alt="The Underachievers Renaissance European Tour comic book style poster" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">The Underachievers &middot; &quot;Renaissance European Tour&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-underachievers-forevermore-world-tour.jpg" alt="The Underachievers Forevermore Express World Tour poster" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">The Underachievers &middot; &quot;Forevermore Express&quot; World Tour</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-underachievers-forevermore-na-tour.jpg" alt="The Underachievers Forevermore Express North American Tour poster" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">The Underachievers &middot; &quot;Forevermore Express&quot; N.A. Tour</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-zaytoven-night-lovell-poster.jpg" alt="Vans Park Series after party poster featuring Zaytoven and Night Lovell" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">Zaytoven &amp; Night Lovell &middot; Vans Park Series</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-tpain-lollapalooza-art.jpeg" alt="T-Pain Lollapalooza digital stage art" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">T-Pain &middot; Lollapalooza</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-funk-volume-documentary-poster.jpg" alt="Independent Living The Funk Volume Documentary film poster" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">&quot;Independent Living&quot; &middot; Funk Volume Documentary</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-flight-of-the-dodo-poster.jpg" alt="Flight of the Dodo film poster" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">&quot;Flight of the Dodo&quot; &middot; Film Poster</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-wiscansin-fest-poster.jpg" alt="Nappy Boy Entertainment Wiscansin Fest poster featuring T-Pain and Akon" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">Nappy Boy Entertainment &middot; &quot;Wiscansin Fest&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-wiscansin-fest-poster-v2.jpg" alt="Nappy Boy Entertainment Wiscansin Fest poster, alternate lineup" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Poster</span><span class="gallery-card__label">Nappy Boy Entertainment &middot; &quot;Wiscansin Fest&quot; (Alt. Lineup)</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-wiscansin-fest-real-life.jpg" alt="Wiscansin Fest poster artwork displayed in real life outside The Rave in Milwaukee" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Photo</span><span class="gallery-card__label">&quot;Wiscansin Fest&quot; &middot; Art in Real Life</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-big-henry.jpg" alt="Big Henry gorilla logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Big Henry &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/digital-pencilfingerz-bandana.jpg" alt="Pencil Fingerz branded bandana pattern design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Pattern</span><span class="gallery-card__label">Pencil Fingerz &middot; Bandana Design</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-andre3000.jpg" alt="Digital portrait illustration of a man with a flower-filled hat" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Portrait Illustration</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/digital-nappy-boy-logo.jpg" alt="Nappy Boy Automotive logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Nappy Boy Automotive &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-nappy-boy-films-logo.jpg" alt="Nappy Boy Films triangle and film reel logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Nappy Boy Films &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-currensy-illustration.jpg" alt="Digital portrait illustration of Curren$y with airplanes overhead" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Curren$y &middot; Portrait Illustration</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-eric-church-portrait.jpeg" alt="Stained-glass style portrait illustration of Eric Church" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Eric Church &middot; Portrait Illustration</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-feed-records-logo.png" alt="FEED Records skull and vinyl record logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">FEED Records &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-thunder-roofing-logo.png" alt="Thunder Roofing logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Thunder Roofing &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-muscle-palace-logo.jpg" alt="The Muscle Palace Gentlemen's Fitness Club logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">The Muscle Palace &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-yelawolf-logo.jpeg" alt="Yelawolf wolf head logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Yelawolf &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-yelawolf-slumerican-made-portrait.jpg" alt="Ornate framed portrait illustration of Yelawolf, Slumerican Made" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Yelawolf &middot; &quot;Slumerican Made&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-mega-built-bullies-logo.png" alt="Mega Built Bullies dog logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Mega Built Bullies &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-pikachu-illustration.jpg" alt="Digital illustration of Pikachu styled as a rapper" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Portrait Illustration</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-young-scorcher-charmeleon.jpg" alt="Young Scorcher Trying to Evolve Like Charmeleon digital illustration" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Portrait Illustration</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-mar-y-sol-logo.jpg" alt="Mar y Sol sun and sailboat logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Mar y Sol &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-tanner-olsen-band-logo.jpg" alt="Tanner Olsen Band logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Tanner Olsen Band &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-pencil-fingerz-bc-badge.jpg" alt="Pencil Fingerz British Columbia Est 1994 badge logo, four color variations" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Pencil Fingerz &middot; Badge Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-whose-world-is-this-sticker.jpg" alt="Pencil Fingerz Whose World Is This sticker design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Sticker</span><span class="gallery-card__label">Pencil Fingerz &middot; &quot;Whose World Is This?&quot;</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-pro-era-bridge-artwork.jpg" alt="Pro Era logo illustrated over the Brooklyn Bridge skyline at night" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Pro Era &middot; Skyline Artwork</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-scribble-portrait-glasses.jpg" alt="Digital scribble-style portrait illustration of a man with round glasses" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Portrait Illustration</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-scribble-portrait-mic.jpg" alt="Digital scribble-style portrait illustration of a man singing into a microphone" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Portrait Illustration</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-scribble-portrait-bucket-hat.jpg" alt="Digital scribble-style portrait illustration of a man in a bucket hat" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Digital</span><span class="gallery-card__label">Portrait Illustration</span></div></div>
+        </article>
+      </div>
+
+      <div class="section__foot">
+        <a href="book-art.html" class="btn btn--outline">Commission a Logo or Digital Piece</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="footer-brand">
+        <span class="footer-brand__mark"><img src="assets/logo-transparent.png" alt="Pencil Fingerz logo" width="48" height="48"></span>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-nav__col">
+          <span class="footer-nav__title">Explore</span>
+          <a href="murals.html">Murals</a>
+          <a href="paintings.html">Paintings</a>
+          <a href="tattoos.html">Tattoos</a>
+          <a href="logos-digital.html">Logos &amp; Digital</a>
+          <a href="clothing.html">Wearables</a>
+          <a href="store.html">Store</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-nav__col">
+          <span class="footer-nav__title">Book</span>
+          <a href="book-tattoo.html">Book a Tattoo</a>
+          <a href="book-art.html">Book Murals &amp; Other Art</a>
+        </div>
+        <div class="footer-nav__col">
+          <span class="footer-nav__title">Contact</span>
+          <a href="mailto:pencilfingerzmgmt@gmail.com">pencilfingerzmgmt@gmail.com</a>
+          <span style="font-size:var(--fs-xs); color:var(--color-ink-soft);">Chilliwack, B.C.</span>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <span class="footer-social__title">Follow</span>
+        <div class="footer-social__icons">
+          <a href="https://www.instagram.com/pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://x.com/Pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on X">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4L4 20"/></svg>
+          </a>
+          <a href="https://www.facebook.com/pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h-2a2 2 0 00-2 2v2H9v3h2v6h3v-6h2.2l.8-3H14v-1.5c0-.55.45-1 1-1H16z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v9.5a3.5 3.5 0 11-3-3.46"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year></span> Pencil Fingerz. All rights reserved.</span>
+      <span>Hand-painted clothing photos coming soon.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pencil Fingerz: Murals, Tattoos, Logos &amp; Digital Art</title>
+<meta name="description" content="Pencil Fingerz: murals &amp; paintings, tattoos, logos and digital art by a multidisciplinary artist based in Chilliwack, B.C.">
+<link rel="icon" href="assets/favicon-pf-vector.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas class="mouse-trail-canvas" data-pencil-trail aria-hidden="true"></canvas>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="home.html" class="brand" aria-label="Pencil Fingerz home">
+      <span class="brand__mark"><img src="assets/logo-transparent.png" alt="" width="40" height="40"></span>
+      </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="murals.html">Murals</a>
+      <a href="paintings.html">Paintings</a>
+      <a href="tattoos.html">Tattoos</a>
+      <a href="logos-digital.html">Logos &amp; Digital</a>
+      <a href="clothing.html">Wearables</a>
+      <a href="about.html">About</a>
+      <a href="store.html" class="btn btn--teal" style="padding:var(--space-2) var(--space-3); min-height:auto;">Store</a>
+      <a href="book-tattoo.html" class="btn btn--gold" style="padding:var(--space-2) var(--space-3); min-height:auto;">Book a Tattoo</a>
+      <a href="book-art.html" class="btn btn--gold" style="padding:var(--space-2) var(--space-3); min-height:auto;">Book Something Else</a>
+    </nav>
+
+    <button type="button" class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" data-mobile-nav hidden>
+  <div class="mobile-nav__top">
+    <button type="button" class="mobile-nav__close" data-nav-close aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <nav class="mobile-nav__links" aria-label="Mobile">
+    <a href="home.html">Home</a>
+    <a href="murals.html">Murals</a>
+    <a href="paintings.html">Paintings</a>
+    <a href="tattoos.html">Tattoos</a>
+    <a href="logos-digital.html">Logos &amp; Digital</a>
+    <a href="clothing.html">Wearables</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="mobile-nav__cta">
+    <a href="store.html" class="btn btn--teal">Store</a>
+    <a href="book-tattoo.html" class="btn btn--gold">Book a Tattoo</a>
+    <a href="book-art.html" class="btn btn--gold">Book Something Else</a>
+  </div>
+</div>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero container">
+    <p class="hero__eyebrow">Chilliwack, B.C. &middot; Multidisciplinary Artist</p>
+    <h1>Murals, Illustration<br>Design, Tattoos<br><span class="accent">And more</span></h1>
+    <p class="lede">Pencil Fingerz is a <span class="highlight">juno-award nominated</span>, multidisciplinary artist specializing in large-scale, high-value murals and paintings, plus custom tattoos, logo design, digital art, and hand-painted clothing. Every piece is 100% hand-made, no AI involved, built from the same restless hand.</p>
+    <span class="availability-badge">Now booking large-scale mural commissions for 2026/2027</span>
+    <div class="hero__actions">
+      <a href="book-art.html" class="btn btn--gold" data-magnetic>Book a Mural or Painting</a>
+      <a href="book-tattoo.html" class="btn btn--outline" data-magnetic>Book a Tattoo</a>
+    </div>
+  </section>
+
+  <!-- NOTABLE CLIENTS -->
+  <section class="section section--soft" id="notable-clients" style="padding-block: var(--space-7);">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <span class="section__kicker">Trusted By</span>
+        <h2 class="section__title">Notable Clients</h2>
+        <p class="section__desc">Pencil Fingerz has created album artwork and branding for some of music&rsquo;s biggest names, including T-Pain, Lil Wayne, Snoop Dogg, Cam&rsquo;ron, Yelawolf, The Underachievers, and many more.</p>
+        <p class="section__desc">Beyond the music industry, his work spans storefronts, public spaces, civic landmarks, and large-scale installations. Pencil Fingerz has delivered high-impact, high-value work for businesses, municipalities, and institutions across British Columbia, including Old Yale Brewing Co., Kent&rsquo;s Ice Cream Co., the City of Chilliwack, The Embassy, and Watson Elementary.</p>
+        <p class="section__desc">From album covers to city-scale murals, every project is built to be seen, remembered, and made to last.</p>
+      </div>
+
+      <div class="client-grid">
+        <figure class="client-tile" data-reveal>
+          <img src="assets/Murals/old%20yale%20mural.jpg" alt="Old Yale Brewing Co. mountain and river mural, with seating in front" loading="lazy">
+          <figcaption>Old Yale Brewing Co.</figcaption>
+        </figure>
+        <figure class="client-tile" data-reveal>
+          <img src="assets/Murals/mural-kents-icecream.jpg" alt="Customer sitting in front of the Kent&rsquo;s Ice Cream Co. mural" loading="lazy">
+          <figcaption>Kent&rsquo;s Ice Cream Co.</figcaption>
+        </figure>
+        <figure class="client-tile" data-reveal>
+          <img src="assets/Murals/mural-chilliwack.jpg" alt="Trompe l&rsquo;oeil brick-break mural depicting Chilliwack landmarks" loading="lazy">
+          <figcaption>City of Chilliwack</figcaption>
+        </figure>
+        <figure class="client-tile" data-reveal>
+          <img src="assets/Murals/mural-embassy.jpg" alt="Two people in front of The Embassy&rsquo;s graffiti-style brick mural" loading="lazy">
+          <figcaption>The Embassy</figcaption>
+        </figure>
+        <figure class="client-tile" data-reveal>
+          <img src="assets/digital-tpain-on-top-of-the-covers.jpeg" alt="T-Pain &quot;On Top of the Covers&quot; album artwork" loading="lazy">
+          <figcaption>T-Pain</figcaption>
+        </figure>
+        <figure class="client-tile" data-reveal>
+          <img src="assets/Digital%20Art/digital-nappy-boy-tpain-photo.jpg" alt="T-Pain on set with the Nappy Boy Automotive car wrap" loading="lazy">
+          <figcaption>T-Pain &times; Nappy Boy Automotive</figcaption>
+        </figure>
+        <figure class="client-tile" data-reveal>
+          <img src="assets/Digital%20Art/cam%20ron%202%20cover.jpg" alt="Cam&rsquo;ron &quot;Purple Haze 2&quot; album cover artwork" loading="lazy">
+          <figcaption>Cam&rsquo;ron</figcaption>
+        </figure>
+        <figure class="client-tile" data-reveal>
+          <img src="assets/Digital%20Art/underachievers%20cover.jpeg" alt="The Underachievers &quot;It Happened In Flatbush&quot; album cover artwork" loading="lazy">
+          <figcaption>The Underachievers</figcaption>
+        </figure>
+        <figure class="client-tile" data-reveal>
+          <img src="assets/Paintings/painting-chilliwack-fire-department-presentation.jpg" alt="Chilliwack Fire Department crew with their commissioned paramedic portrait painting" loading="lazy">
+          <figcaption>Chilliwack Fire Department</figcaption>
+        </figure>
+        <figure class="client-tile" data-reveal>
+          <img src="assets/Paintings/painting-chilliwack-fire-department-portrait.jpg" alt="Close-up of the commissioned paramedic portrait painting for Chilliwack Fire Department" loading="lazy">
+          <figcaption>Chilliwack Fire Department</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="section" style="padding-block: var(--space-7);">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item" data-reveal>
+          <span class="trust-item__badge">No AI. Ever.</span>
+          <p>Every piece starts as a pencil in a real hand and ends the same way. AI art is easy to spot: flat, generic, and it repeats itself. Pencil Fingerz makes work no algorithm could ever produce.</p>
+        </div>
+        <div class="trust-item" data-reveal>
+          <span class="trust-item__badge">Built for Big Projects</span>
+          <p>Storefronts, interiors, large canvases, brand campaigns. The focus here is large-scale, high-value commissions, not quick sketches.</p>
+        </div>
+        <div class="trust-item" data-reveal>
+          <span class="trust-item__badge">Beyond the Wall</span>
+          <p>Murals and paintings are the core, but the same hand also paints directly on clothing and other unconventional surfaces. One-of-one creations you will not find anywhere else.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MURALS -->
+  <section class="section" id="murals">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <span class="section__kicker">Signature Commissions</span>
+        <h2 class="section__title">Murals</h2>
+        <p class="section__desc">Large-scale, high-investment wall murals: the flagship of the Pencil Fingerz practice, built for storefronts, interiors, and public spaces. 100% hand-painted, with zero AI in the process.</p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--feature">
+        <article class="gallery-card gallery-card--murals gallery-card--flagship" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Murals/mural-old-yale.jpg" alt="Mountain and river mural inside Old Yale Brewing Co." loading="eager">
+          <div class="gallery-card__overlay">
+            <div><span class="gallery-card__tag">Mural</span><span class="gallery-card__label">Old Yale Brewing Co. &middot; Interior Feature Wall</span></div>
+          </div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Murals/mural-kents-icecream.jpg" alt="Colorful ice cream mural at Kent's Ice Cream Co." loading="lazy">
+          <div class="gallery-card__overlay">
+            <div><span class="gallery-card__tag">Mural</span><span class="gallery-card__label">Kent's Ice Cream Co. &middot; Storefront</span></div>
+          </div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Murals/mural-chilliwack.jpg" alt="Trompe l'oeil brick-break mural depicting Chilliwack landmarks" loading="lazy">
+          <div class="gallery-card__overlay">
+            <div><span class="gallery-card__tag">Mural</span><span class="gallery-card__label">City of Chilliwack &middot; Landmark Wall</span></div>
+          </div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Murals/mural-wildcat-wide.jpg" alt="Wildcats mural with cougar and forest scene at Watson Elementary" loading="lazy">
+          <div class="gallery-card__overlay">
+            <div><span class="gallery-card__tag">Mural</span><span class="gallery-card__label">Watson Wildcats &middot; Exterior Wall</span></div>
+          </div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Murals/mural-embassy.jpg" alt="Graffiti-style brick mural inside The Embassy bar" loading="lazy">
+          <div class="gallery-card__overlay">
+            <div><span class="gallery-card__tag">Mural</span><span class="gallery-card__label">The Embassy &middot; Interior Bar Mural</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="section__foot section__foot--stacked">
+        <p class="section__foot-note">Now booking large-scale mural commissions for 2026.</p>
+        <div class="section__foot" style="margin-top:0;">
+          <a href="book-art.html" class="btn btn--outline">Start a Mural Inquiry</a>
+          <a href="murals.html" class="btn btn--ghost">See More Murals</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAINTINGS -->
+  <section class="section" id="paintings">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <span class="section__kicker">Studio Practice</span>
+        <h2 class="section__title">Paintings</h2>
+        <p class="section__desc">Canvas and studio work built for private collections and serious collectors: original, hand-painted pieces with zero AI in the process.</p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--feature">
+        <article class="gallery-card gallery-card--murals gallery-card--flagship" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/painting-concert.jpg" alt="Concert painting of a singer performing over a crowd" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Painting</span><span class="gallery-card__label">Concert Scene &middot; Acrylic</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/painting-sunflowers.jpg" alt="Still life painting of sunflowers in a glass vase" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Painting</span><span class="gallery-card__label">Still Life &middot; Sunflowers</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/painting-multi-vase-flowers.jpg" alt="Still life painting of flowers in multiple vases" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Painting</span><span class="gallery-card__label">Still Life &middot; Florals</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/painting-white-flowers.jpg" alt="Still life painting of white flowers in a blue pot" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Painting</span><span class="gallery-card__label">Still Life &middot; White Blooms</span></div></div>
+        </article>
+      </div>
+
+      <div class="section__foot">
+        <a href="book-art.html" class="btn btn--outline">Commission a Painting</a>
+        <a href="paintings.html" class="btn btn--ghost">See More Paintings</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOTHING & SHOES -->
+  <section class="section section--soft" id="clothing">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <span class="section__kicker">Beyond the Wall</span>
+        <h2 class="section__title">Wearables</h2>
+        <p class="section__desc">Hand-painted, one-of-one pieces on clothing, shoes, and other unconventional surfaces. 100% custom, zero AI.</p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--feature">
+        <article class="gallery-card gallery-card--murals gallery-card--flagship" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Wearables/clothing-hand-tshirt-outdoor.jpg" alt="Hand-painted t-shirt with a portrait and hand design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Shirt</span><span class="gallery-card__label">Custom Hand-Painted Tee</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--murals" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Wearables/clothing-basquiat-vans.jpg" alt="Hand-painted custom Vans shoes with a Jean-Michel Basquiat design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Shoes</span><span class="gallery-card__label">Custom Vans &middot; Jean-Michel Basquiat</span></div></div>
+        </article>
+      </div>
+
+      <div class="section__foot">
+        <a href="book-art.html" class="btn btn--outline">Commission Custom Clothing</a>
+        <a href="clothing.html" class="btn btn--ghost">See More Wearables</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TATTOOS -->
+  <section class="section section--soft" id="tattoos">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <span class="section__kicker">Second Chapter</span>
+        <h2 class="section__title">Tattoos</h2>
+        <p class="section__desc">Custom pieces built around the same linework and ink instincts as the murals. Every tattoo is one-of-one.</p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--feature">
+        <article class="gallery-card gallery-card--tattoos" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Tattoos/tattoo-biggie.jpg" alt="Black and grey Notorious B.I.G. portrait tattoo" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Tattoo</span><span class="gallery-card__label">Portrait &middot; Forearm</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--tattoos" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Tattoos/tattoo-godfather.jpg" alt="Godfather movie portrait tattoo" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Tattoo</span><span class="gallery-card__label">Portrait &middot; Bicep</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--tattoos" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Tattoos/tattoo-tiger.jpg" alt="Roaring tiger tattoo" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Tattoo</span><span class="gallery-card__label">Tiger &middot; Shoulder</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--tattoos" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Tattoos/tattoo-wolf-diamond.jpg" alt="Wolf portrait tattoo in a diamond frame" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Tattoo</span><span class="gallery-card__label">Wolf &middot; Bicep</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--tattoos" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Tattoos/tattoo-creation-butterfly.jpg" alt="Creation of Adam style hands with butterfly tattoo" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Tattoo</span><span class="gallery-card__label">Fine Line &middot; Forearm</span></div></div>
+        </article>
+      </div>
+
+      <div class="section__foot">
+        <a href="book-tattoo.html" class="btn btn--gold">Book a Tattoo</a>
+        <a href="tattoos.html" class="btn btn--ghost">See More Tattoos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS & DIGITAL ART -->
+  <section class="section" id="digital">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <span class="section__kicker">Also On the Table</span>
+        <h2 class="section__title">Logos &amp; Digital Art</h2>
+        <p class="section__desc">Brand marks, album covers, tour posters, and digital illustration, all from the same hand, different canvas.</p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--feature">
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-def-soulja.jpg" alt="Def Soulja Moonlight Marauder album cover artwork" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Def Soulja &middot; "Moonlight Marauder"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-currensy-fire.jpg" alt="Currensy and Drupey Beats Fire in the Clouds album cover" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Curren$y &middot; "Fire in the Clouds"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-issa-gold.jpg" alt="Issa Gold Conversations with a Butterfly album cover" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Album Cover</span><span class="gallery-card__label">Issa Gold &middot; "Conversations with a Butterfly"</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-big-henry.jpg" alt="Big Henry gorilla logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Big Henry &middot; Brand Mark</span></div></div>
+        </article>
+        <article class="gallery-card gallery-card--digital" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/Digital%20Art/digital-slumerican-league.png" alt="Slumerican Drinking League logo design" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__tag">Logo</span><span class="gallery-card__label">Slumerican Drinking League</span></div></div>
+        </article>
+      </div>
+
+      <div class="section__foot">
+        <a href="book-art.html" class="btn btn--outline">Commission a Logo or Digital Piece</a>
+        <a href="logos-digital.html" class="btn btn--ghost">See More Logos &amp; Digital Art</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section--soft" id="about">
+    <div class="container split">
+      <div class="split__media" data-reveal>
+        <img src="assets/Professional%20Photos/artist-portrait.jpg" alt="Pencil Fingerz standing in the studio in front of a mural" loading="lazy" style="width:100%; height:100%; object-fit:cover; border-radius:inherit;">
+      </div>
+      <div data-reveal>
+        <span class="section__kicker">About</span>
+        <h2 class="section__title" style="margin-top:var(--space-3);">One hand, every medium.</h2>
+        <p style="color:var(--color-ink-soft); margin-top:var(--space-5); max-width:52ch;">
+          Pencil Fingerz is a multidisciplinary artist based in Chilliwack, B.C., specializing in large-scale,
+          high-value murals and paintings, with custom tattoos, logo design, digital art, and hand-painted
+          clothing on the side. Whether it's a twenty-foot wall or a two-inch tattoo, every project starts from
+          the same sketchbook, the same real hand, and the same obsession with line work, texture, and story.
+          No AI, no shortcuts. AI art is obvious the moment you see it, and it will never produce the kind of
+          custom, one-of-one results you get from Pencil Fingerz.
+          <em>(Placeholder bio: swap in your real artist statement any time.)</em>
+        </p>
+        <div class="hero__actions">
+          <a href="book-art.html" class="btn btn--gold" data-magnetic>Book a Mural or Painting</a>
+          <a href="book-tattoo.html" class="btn btn--outline" data-magnetic>Book a Tattoo</a>
+          <a href="about.html" class="btn btn--ghost">See More About Pencil Fingerz</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top:var(--space-9);">
+      <div class="section__head" data-reveal style="margin-bottom:var(--space-5);">
+        <span class="section__kicker">In the Studio</span>
+        <h3 class="section__title" style="font-size:var(--fs-lg);">Behind the work.</h3>
+      </div>
+      <div class="gallery-grid gallery-grid--feature">
+        <article class="gallery-card" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/studio-tattoo-session.jpg" alt="Pencil Fingerz tattooing a client" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__label">Tattoo Session</span></div></div>
+        </article>
+        <article class="gallery-card" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/studio-sketching.jpg" alt="Pencil Fingerz sketching at a desk in front of a mural" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__label">Sketching a New Concept</span></div></div>
+        </article>
+        <article class="gallery-card" data-reveal tabindex="0">
+          <img class="gallery-card__img" src="assets/studio-easel-painting.jpg" alt="Pencil Fingerz painting on canvas at an easel" loading="lazy">
+          <div class="gallery-card__overlay"><div><span class="gallery-card__label">Painting on Canvas</span></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band" data-reveal>
+        <span class="hero__eyebrow" style="color:var(--color-gold-bright);">Let's make something</span>
+        <h2>Got a wall, a brand, or a body that needs art?</h2>
+        <div class="cta-band__actions">
+          <a href="book-tattoo.html" class="btn btn--gold" data-magnetic>Book a Tattoo</a>
+          <a href="book-art.html" class="btn btn--outline" style="border-color:#fff; color:#fff;" data-magnetic>Book Murals &amp; Other Art</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKETCHPAD -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section__head" data-reveal style="text-align:center; align-items:center; margin-inline:auto;">
+        <span class="section__kicker">Just for Fun</span>
+        <h2 class="section__title">Try your hand.</h2>
+        <p class="section__desc" style="text-align:center;">A tiny sketchpad, right in the browser. Draw something, download it, keep it forever &mdash; or design your next tattoo here (results may vary).</p>
+      </div>
+
+      <div class="paint-app" data-reveal>
+        <div class="paint-app__window">
+          <div class="paint-app__titlebar">
+            <span class="paint-app__titlebar-icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.3" stroke-linejoin="round"><path d="M2 14l1-4 8-8 3 3-8 8-4 1z"/></svg>
+            </span>
+            <span class="paint-app__titlebar-text">untitled - Paint</span>
+            <span class="paint-app__titlebar-controls" aria-hidden="true">
+              <span class="paint-app__win-btn">&minus;</span>
+              <span class="paint-app__win-btn">&#9633;</span>
+              <span class="paint-app__win-btn paint-app__win-btn--close">&times;</span>
+            </span>
+          </div>
+          <div class="paint-app__menubar" aria-hidden="true">
+            <span>File</span><span>Edit</span><span>View</span><span>Image</span><span>Colors</span><span>Help</span>
+          </div>
+
+          <div class="paint-app__body">
+            <div class="paint-app__toolbox" role="toolbar" aria-label="Drawing tools">
+              <button type="button" class="paint-app__tool is-active" data-paint-tool="pencil" aria-label="Pencil" aria-pressed="true">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M2 14l1-4 8-8 3 3-8 8-4 1z"/></svg>
+              </button>
+              <button type="button" class="paint-app__tool" data-paint-tool="brush" aria-label="Brush" aria-pressed="false">
+                <svg viewBox="0 0 16 16"><path d="M3 13c0-3 1-5 3-6l6-6 2 2-6 6c-1 2-3 3-5 4z" fill="currentColor"/></svg>
+              </button>
+              <button type="button" class="paint-app__tool" data-paint-tool="line" aria-label="Line" aria-pressed="false">
+                <svg viewBox="0 0 16 16" stroke="currentColor" stroke-width="1.5"><line x1="2" y1="14" x2="14" y2="2"/></svg>
+              </button>
+              <button type="button" class="paint-app__tool" data-paint-tool="rect" aria-label="Rectangle" aria-pressed="false">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="10"/></svg>
+              </button>
+              <button type="button" class="paint-app__tool" data-paint-tool="fill" aria-label="Fill bucket" aria-pressed="false">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 8l6-6 6 6-6 6-6-6z"/><path d="M8 2v4"/><circle cx="13" cy="13" r="1.6" fill="currentColor" stroke="none"/></svg>
+              </button>
+              <button type="button" class="paint-app__tool" data-paint-tool="eraser" aria-label="Eraser" aria-pressed="false">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="6" width="10" height="6" rx="1" transform="rotate(-20 8 9)"/></svg>
+              </button>
+              <button type="button" class="paint-app__tool" data-paint-size="2" aria-label="Small brush size">
+                <svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="1.5" fill="currentColor"/></svg>
+              </button>
+              <button type="button" class="paint-app__tool is-active" data-paint-size="4" aria-label="Medium brush size">
+                <svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="3" fill="currentColor"/></svg>
+              </button>
+              <button type="button" class="paint-app__tool" data-paint-size="7" aria-label="Large brush size">
+                <svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="5" fill="currentColor"/></svg>
+              </button>
+            </div>
+
+            <div class="paint-app__canvas-wrap">
+              <canvas class="paint-app__canvas" data-paint-canvas width="640" height="380" aria-label="Drawing canvas: click and drag with the mouse, or use your finger on a touchscreen, to draw"></canvas>
+            </div>
+          </div>
+
+          <div class="paint-app__palette-row">
+            <div class="paint-app__current-color" aria-hidden="true">
+              <span class="paint-app__current-color-bg"></span>
+              <span class="paint-app__current-color-fg" data-paint-fg-swatch></span>
+            </div>
+            <div class="paint-app__palette" data-paint-palette role="group" aria-label="Color palette"></div>
+          </div>
+
+          <div class="paint-app__statusbar">
+            <div class="paint-app__actions">
+              <button type="button" class="paint-app__action-btn" data-paint-undo>Undo</button>
+              <button type="button" class="paint-app__action-btn" data-paint-clear>Clear</button>
+              <button type="button" class="paint-app__action-btn" data-paint-save>Save as PNG</button>
+            </div>
+            <span class="paint-app__statusbar-text">640 x 380px</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__top">
+      <div class="footer-brand">
+        <span class="footer-brand__mark"><img src="assets/logo-transparent.png" alt="Pencil Fingerz logo" width="48" height="48"></span>
+      </div>
+
+      <div class="footer-nav">
+        <div class="footer-nav__col">
+          <span class="footer-nav__title">Explore</span>
+          <a href="murals.html">Murals</a>
+          <a href="paintings.html">Paintings</a>
+          <a href="tattoos.html">Tattoos</a>
+          <a href="logos-digital.html">Logos &amp; Digital</a>
+          <a href="clothing.html">Wearables</a>
+          <a href="store.html">Store</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="footer-nav__col">
+          <span class="footer-nav__title">Book</span>
+          <a href="book-tattoo.html">Book a Tattoo</a>
+          <a href="book-art.html">Book Murals &amp; Other Art</a>
+        </div>
+        <div class="footer-nav__col">
+          <span class="footer-nav__title">Contact</span>
+          <a href="mailto:pencilfingerzmgmt@gmail.com">pencilfingerzmgmt@gmail.com</a>
+          <span style="font-size:var(--fs-xs); color:var(--color-ink-soft);">Chilliwack, B.C.</span>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <span class="footer-social__title">Follow</span>
+        <div class="footer-social__icons">
+          <a href="https://www.instagram.com/pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://x.com/Pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on X">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4l16 16M20 4L4 20"/></svg>
+          </a>
+          <a href="https://www.facebook.com/pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h-2a2 2 0 00-2 2v2H9v3h2v6h3v-6h2.2l.8-3H14v-1.5c0-.55.45-1 1-1H16z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@pencilfingerz" target="_blank" rel="noopener" aria-label="Pencil Fingerz on TikTok">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 4v9.5a3.5 3.5 0 11-3-3.46"/><path d="M14 4c0 2.5 2 4.5 4.5 4.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <span>&copy; <span data-year></span> Pencil Fingerz. All rights reserved.</span>
+      <span>Hand-painted clothing photos coming soon.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

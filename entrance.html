@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pencil Fingerz: Murals, Tattoos &amp; Custom Art</title>
+<meta name="description" content="Pencil Fingerz: murals, paintings, tattoos, logos and digital art. Based in Chilliwack, B.C.">
+<link rel="icon" href="assets/favicon-pf-vector.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="entrance-page">
+
+<main class="entrance">
+  <canvas class="entrance__canvas" data-entrance-canvas aria-hidden="true"></canvas>
+
+  <div class="entrance__content">
+    <h1 class="visually-hidden">Pencil Fingerz: Murals, Tattoos, Logos &amp; Digital Art</h1>
+
+    <button type="button" class="enter-btn" data-enter-btn data-href="home.html" aria-label="Enter the Pencil Fingerz site">
+      <span class="entrance__mark" aria-hidden="true">
+        <span class="entrance__mark-clip">
+          <img src="assets/logo.png" alt="" width="330" height="330">
+        </span>
+      </span>
+      <span class="enter-btn__label" aria-hidden="true">
+        <span class="enter-btn__label-desktop">Click to Enter</span>
+        <span class="enter-btn__label-mobile">Tap to Enter</span>
+      </span>
+    </button>
+  </div>
+
+  <p class="entrance__skip">Murals, Paintings, Tattoos, Logos, Digital Art</p>
+</main>
+
+<div class="entrance-transition" data-entrance-transition aria-hidden="true"></div>
+
+<script src="js/entrance.js"></script>
+</body>
+</html>
