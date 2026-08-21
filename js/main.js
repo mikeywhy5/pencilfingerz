@@ -460,7 +460,7 @@
     var lastPosX, lastPosY;
 
     document.addEventListener("mousemove", function (e) {
-      if ((e.target.nodeType === 1 && e.target.closest("button, a, .paint-app, .form-card--no-trail"))) {
+      if ((e.target.nodeType === 1 && e.target.closest("button, a, .paint-app, .no-pencil-trail"))) {
         hasLastPos = false;
         return;
       }

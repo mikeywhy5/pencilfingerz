@@ -8,7 +8,7 @@
 <link rel="icon" href="assets/favicon-pf-vector.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600;700&family=Alex+Brush&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -63,15 +63,28 @@
 
 <main id="main">
 
+  <!-- ARTIST PORTRAIT -->
+  <section class="artist-intro">
+    <p class="artist-intro__signature">Pencil Fingerz</p>
+    <img class="artist-intro__img no-pencil-trail" src="assets/Professional%20Photos/artist-portrait.jpg" alt="Portrait of the Pencil Fingerz artist" loading="eager">
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <!-- Everything below scrolls up over the pinned portrait above -->
+  <div class="scroll-over">
+
   <!-- HERO -->
   <section class="hero container">
     <p class="hero__eyebrow">Chilliwack, B.C. &middot; Multidisciplinary Artist</p>
     <h1>Murals, Illustration<br>Design, Tattoos<br><span class="accent">And more</span></h1>
-    <p class="lede">Pencil Fingerz is a <span class="highlight">juno-award nominated</span>, multidisciplinary artist specializing in large-scale, high-value murals and paintings, plus custom tattoos, logo design, digital art, and hand-painted clothing. Every piece is 100% hand-made, no AI involved, built from the same restless hand.</p>
+    <p class="lede"><span class="lede-intro">Pencil Fingerz is a</span><span class="highlight text-shine">juno-award nominated</span>, multidisciplinary artist specializing in large-scale, high-value murals and paintings, plus custom tattoos, logo design, digital art, and hand-painted clothing. Every piece is 100% hand-made, no AI involved, built from the same restless hand.</p>
     <span class="availability-badge">Now booking large-scale mural commissions for 2026/2027</span>
     <div class="hero__actions">
-      <a href="book-art.html" class="btn btn--gold" data-magnetic>Book a Mural or Painting</a>
-      <a href="book-tattoo.html" class="btn btn--outline" data-magnetic>Book a Tattoo</a>
+      <a href="book-art.html" class="btn btn--gold btn--glow-white" data-magnetic>Book a Mural or Painting</a>
+      <a href="book-tattoo.html" class="btn btn--outline btn--glow-white" data-magnetic>Book a Tattoo</a>
     </div>
   </section>
 
@@ -196,8 +209,8 @@
       <div class="section__foot section__foot--stacked">
         <p class="section__foot-note">Now booking large-scale mural commissions for 2026.</p>
         <div class="section__foot" style="margin-top:0;">
-          <a href="book-art.html" class="btn btn--outline">Start a Mural Inquiry</a>
-          <a href="murals.html" class="btn btn--ghost">See More Murals</a>
+          <a href="book-art.html" class="btn btn--outline btn--glow-white">Start a Mural Inquiry</a>
+          <a href="murals.html" class="btn btn--ghost btn--glow-white">See More Murals</a>
         </div>
       </div>
     </div>
@@ -232,8 +245,8 @@
       </div>
 
       <div class="section__foot">
-        <a href="book-art.html" class="btn btn--outline">Commission a Painting</a>
-        <a href="paintings.html" class="btn btn--ghost">See More Paintings</a>
+        <a href="book-art.html" class="btn btn--outline btn--glow-white">Commission a Painting</a>
+        <a href="paintings.html" class="btn btn--ghost btn--glow-white">See More Paintings</a>
       </div>
     </div>
   </section>
@@ -259,8 +272,8 @@
       </div>
 
       <div class="section__foot">
-        <a href="book-art.html" class="btn btn--outline">Commission Custom Clothing</a>
-        <a href="clothing.html" class="btn btn--ghost">See More Wearables</a>
+        <a href="book-art.html" class="btn btn--outline btn--glow-white">Commission Custom Clothing</a>
+        <a href="clothing.html" class="btn btn--ghost btn--glow-white">See More Wearables</a>
       </div>
     </div>
   </section>
@@ -298,8 +311,8 @@
       </div>
 
       <div class="section__foot">
-        <a href="book-tattoo.html" class="btn btn--gold">Book a Tattoo</a>
-        <a href="tattoos.html" class="btn btn--ghost">See More Tattoos</a>
+        <a href="book-tattoo.html" class="btn btn--gold btn--glow-white">Book a Tattoo</a>
+        <a href="tattoos.html" class="btn btn--ghost btn--glow-white">See More Tattoos</a>
       </div>
     </div>
   </section>
@@ -337,8 +350,8 @@
       </div>
 
       <div class="section__foot">
-        <a href="book-art.html" class="btn btn--outline">Commission a Logo or Digital Piece</a>
-        <a href="logos-digital.html" class="btn btn--ghost">See More Logos &amp; Digital Art</a>
+        <a href="book-art.html" class="btn btn--outline btn--glow-white">Commission a Logo or Digital Piece</a>
+        <a href="logos-digital.html" class="btn btn--ghost btn--glow-white">See More Logos &amp; Digital Art</a>
       </div>
     </div>
   </section>
@@ -362,9 +375,9 @@
           <em>(Placeholder bio: swap in your real artist statement any time.)</em>
         </p>
         <div class="hero__actions">
-          <a href="book-art.html" class="btn btn--gold" data-magnetic>Book a Mural or Painting</a>
-          <a href="book-tattoo.html" class="btn btn--outline" data-magnetic>Book a Tattoo</a>
-          <a href="about.html" class="btn btn--ghost">See More About Pencil Fingerz</a>
+          <a href="book-art.html" class="btn btn--gold btn--glow-white" data-magnetic>Book a Mural or Painting</a>
+          <a href="book-tattoo.html" class="btn btn--outline btn--glow-white" data-magnetic>Book a Tattoo</a>
+          <a href="about.html" class="btn btn--ghost btn--glow-white">See More About Pencil Fingerz</a>
         </div>
       </div>
     </div>
@@ -398,8 +411,8 @@
         <span class="hero__eyebrow" style="color:var(--color-gold-bright);">Let's make something</span>
         <h2>Got a wall, a brand, or a body that needs art?</h2>
         <div class="cta-band__actions">
-          <a href="book-tattoo.html" class="btn btn--gold" data-magnetic>Book a Tattoo</a>
-          <a href="book-art.html" class="btn btn--outline" style="border-color:#fff; color:#fff;" data-magnetic>Book Murals &amp; Other Art</a>
+          <a href="book-tattoo.html" class="btn btn--gold btn--glow-white" data-magnetic>Book a Tattoo</a>
+          <a href="book-art.html" class="btn btn--outline btn--glow-white" style="border-color:#fff; color:#fff;" data-magnetic>Book Murals &amp; Other Art</a>
         </div>
       </div>
     </div>
@@ -488,6 +501,8 @@
     </div>
   </section>
 
+  </div><!-- /.scroll-over -->
+
 </main>
 
 <footer class="site-footer">
@@ -549,8 +564,8 @@
   </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>
