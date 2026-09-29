@@ -532,4 +532,81 @@
     });
   }
 
+  /* ---------------------------------------------------------------------
+     Letter lift / stretch (hero heading): splits each line into per-word
+     groups of per-letter spans so individual letters animate on hover via
+     CSS. Letters are grouped by word (each word pinned to one line with
+     white-space: nowrap) so wrapping on narrow screens still breaks at
+     word boundaries instead of splitting a word mid-letter.
+     ------------------------------------------------------------------- */
+  function splitIntoLetters(el, letterClass) {
+    var words = el.textContent.split(" ");
+    el.textContent = "";
+    words.forEach(function (word, i) {
+      var wordWrap = document.createElement("span");
+      wordWrap.className = "letter-word";
+      word.split("").forEach(function (char) {
+        var span = document.createElement("span");
+        span.className = letterClass;
+        span.textContent = char;
+        wordWrap.appendChild(span);
+      });
+      el.appendChild(wordWrap);
+      if (i < words.length - 1) el.appendChild(document.createTextNode(" "));
+    });
+  }
+  document.querySelectorAll("[data-letter-lift]").forEach(function (el) {
+    splitIntoLetters(el, "hero-lift__letter");
+  });
+  document.querySelectorAll("[data-letter-stretch]").forEach(function (el) {
+    splitIntoLetters(el, "hero-stretch__letter");
+  });
+
+  /* ---------------------------------------------------------------------
+     Intro curtain (home.html, first load, all screen sizes): the logo
+     animation autoplays over the site; at the 6-second mark it fades out
+     and the curtain parts, revealing the header. "ended" stays wired as a
+     fallback in case a future swap-in video is shorter than 6s. Reduced-
+     motion users skip straight to the revealed header with no curtain at
+     all (handled in CSS).
+     ------------------------------------------------------------------- */
+  var curtain = document.querySelector("[data-curtain-intro]");
+  var curtainVideo = curtain ? curtain.querySelector(".curtain-intro__video") : null;
+  var introHeader = document.querySelector("[data-intro-header]");
+  var FADE_AT_SECONDS = 6;
+
+  function openCurtain() {
+    if (!curtain || curtain.classList.contains("is-opening")) return;
+    curtainVideo && curtainVideo.pause();
+    curtain.classList.add("is-opening");
+    // Delayed to land as the panels finish parting, rather than fading
+    // in while the curtain is still visibly mid-transition.
+    setTimeout(function () {
+      if (introHeader) introHeader.classList.add("is-revealed");
+    }, 700);
+    setTimeout(function () {
+      curtain.classList.add("is-done");
+    }, 1100);
+  }
+
+  if (curtain && curtainVideo && !prefersReducedMotion) {
+    curtainVideo.addEventListener("timeupdate", function () {
+      if (curtainVideo.currentTime >= FADE_AT_SECONDS) openCurtain();
+    });
+    curtainVideo.addEventListener("ended", openCurtain);
+    curtainVideo.addEventListener("click", openCurtain);
+    curtain.querySelectorAll("[data-curtain-skip]").forEach(function (btn) {
+      btn.addEventListener("click", openCurtain);
+    });
+    var playAttempt = curtainVideo.play();
+    if (playAttempt && playAttempt.catch) {
+      // Autoplay can still be blocked despite being muted, in which case
+      // there's nothing to watch — open immediately rather than leaving
+      // visitors stuck looking at a frozen first frame.
+      playAttempt.catch(openCurtain);
+    }
+  } else if (introHeader) {
+    introHeader.classList.add("is-revealed");
+  }
+
 })();
