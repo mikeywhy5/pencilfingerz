@@ -663,6 +663,9 @@ select:focus-visible {
   animation: pf-scroll-cue-bounce 1.8s ease-in-out infinite;
 }
 .scroll-cue svg { width: 20px; height: 20px; }
+@media (max-width: 767px) {
+  .hero > .scroll-cue span { display: none; }
+}
 @keyframes pf-scroll-cue-bounce {
   0%, 100% { transform: translateX(-50%) translateY(0); }
   50% { transform: translateX(-50%) translateY(8px); }
