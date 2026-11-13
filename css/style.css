@@ -282,15 +282,12 @@ select:focus-visible {
 .nav a[aria-current="page"]::after { width: 100%; }
 .nav a[aria-current="page"] { color: var(--color-gold-dark); }
 .nav .btn--teal::after { background: #a3ded3; }
-.nav a[href="book-tattoo.html"]::after { background: #2a9d8f; }
 .nav a[href="book-art.html"]::after { background: #2a9d8f; }
 .nav a[href="store.html"][aria-current="page"],
 .mobile-nav__cta a[href="store.html"][aria-current="page"] {
   color: #fff;
   text-shadow: 0 0 8px #fff, 0 0 18px rgba(255,255,255,0.85), 0 0 32px rgba(255,255,255,0.5);
 }
-.nav a[href="book-tattoo.html"][aria-current="page"],
-.mobile-nav__cta a[href="book-tattoo.html"][aria-current="page"],
 .nav a[href="book-art.html"][aria-current="page"],
 .mobile-nav__cta a[href="book-art.html"][aria-current="page"] {
   text-shadow: 0 0 8px #fff, 0 0 18px rgba(255,255,255,0.85), 0 0 32px rgba(255,255,255,0.5);
